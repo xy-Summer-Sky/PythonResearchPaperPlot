@@ -52,7 +52,7 @@ target_names = {
 }
  
 pca_df['target'] = y
-pca_df['target'] = pca_df['target'].map(target_names)
+pca_df['target'] = pca_df['target'].mymap(target_names)
 
 
 

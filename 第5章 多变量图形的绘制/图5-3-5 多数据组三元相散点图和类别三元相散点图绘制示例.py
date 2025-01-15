@@ -78,7 +78,7 @@ def scatter_color(value):
         color = "#751DFE"
     return color
 
-scatter_data["data_color"] = scatter_data["Size"].map(lambda x :scatter_color(x))
+scatter_data["data_color"] = scatter_data["Size"].mymap(lambda x :scatter_color(x))
 
 
 data_color = scatter_data["data_color"].values

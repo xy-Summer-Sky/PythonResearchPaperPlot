@@ -73,7 +73,7 @@ def color_set(x):
         color = "#E18727"
     return color
     
-merger_square["square_color"] = merger_square["country"].map(lambda x :color_set(x))
+merger_square["square_color"] = merger_square["country"].mymap(lambda x :color_set(x))
 color = merger_square.square_color
 fig,ax = plt.subplots(figsize=(5,4.5),dpi=100,facecolor="w")
 map_01 = merger01.plot("type",legend=False,ec="k",lw=.5,color="#9CCA9C",alpha=.8,ax=ax)
